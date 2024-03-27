@@ -1,0 +1,13 @@
+Feature: scenario outline feature
+
+  Scenario Outline:
+    Given I open the browser
+    And Iam on the google homepage
+    When I search for "<searchInput>" on google
+    When I should see "<searchInput>" on the results
+    Then  I close the browser
+
+    Examples:
+      | searchInput |
+      | emir        |
+      | abdullah    |
